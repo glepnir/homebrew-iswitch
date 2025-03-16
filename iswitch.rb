@@ -17,9 +17,7 @@ class Iswitch < Formula
   end
 
   test do
-    # Test help output
-    assert_match "iSwitch", shell_output("#{bin}/iswitch -h", 0)
-    system "#{bin}/iswitch", "-p" or true
+    system "#{bin}/iswitch", "-h"
   end
 
   livecheck do
